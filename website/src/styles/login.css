@@ -1,0 +1,67 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--sarakway-bg);
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-card input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.login-card button {
+  background: var(--sarakway-green);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+}
+
+.link {
+  margin-top: 15px;
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.auth-logo {
+  width: 70px;
+  display: block;
+  margin: 0 auto 16px auto;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 28px;
+  font-size: 14px;
+}

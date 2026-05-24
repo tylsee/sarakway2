@@ -1,0 +1,348 @@
+/* Base Layout */
+.course-editor-page {
+  max-width: 1000px;
+  margin: 2rem auto;
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #334155;
+}
+
+/* Navigation */
+.back-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #0f172a;
+}
+
+/* Course Settings Card */
+.course-settings-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  margin-bottom: 2rem;
+}
+
+.course-editor-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+/* Form Elements */
+.course-settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.editor-input, 
+.editor-textarea, 
+.editor-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.editor-input:focus, 
+.editor-textarea:focus, 
+.editor-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.editor-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.editor-checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+/* Actions & Buttons */
+.course-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.save-course-btn, 
+.add-module-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.save-course-btn:hover, 
+.add-module-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.delete-course-btn {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-course-btn:hover {
+  background-color: #fecaca;
+}
+
+/* Modules Section */
+.editor-divider {
+  margin: 3rem 0;
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-module-btn {
+  margin-bottom: 2rem;
+  width: auto;
+}
+
+/* Modal specific styles */
+/* Note: These targeting children inside BaseModal */
+.modal-overlay { /* Assuming your BaseModal uses this class */
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+/* Container Spacing */
+.guide-module-card, .guide-lesson-card, .guide-quiz-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.guide-module-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Button Group Layout */
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+/* Base Button Styles */
+button {
+  padding: 8px 10px;
+  margin-right: 10px; 
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+/* Primary Action Buttons (Add, Start, Submit) */
+button:not([class]), 
+.primary-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+button:not([class]):hover {
+  background-color: #1d4ed8;
+}
+
+/* Edit Buttons */
+button[onClick*="Edit"], 
+button[onClick*="editing"] {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+button[onClick*="Edit"]:hover {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+/* Delete Buttons */
+button[onClick*="Delete"] {
+  background-color: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #fecdd3;
+}
+
+button[onClick*="Delete"]:hover {
+  background-color: #ffe4e6;
+  border-color: #fda4af;
+}
+
+/* Quiz Option Buttons */
+.quiz-option-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+}
+
+.quiz-option-btn:hover {
+  background-color: #f8fafc;
+  border-color: #3b82f6;
+}
+
+.quiz-option-btn.selected {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+  color: #2563eb;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+/* Module Header Styling */
+.guide-module-header {
+  background-color: #f8fafc;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.guide-module-header:hover {
+  background-color: #f1f5f9;
+}
+
+.form-group {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.form-group label {
+
+  font-weight: 700;
+
+  color: #374151;
+
+  font-size: 14px;
+}
+
+.editor-file-input {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: 2px dashed #cbd5e1;
+
+  border-radius: 16px;
+
+  background: #f8fafc;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.editor-file-input:hover {
+
+  border-color: #16a34a;
+
+  background: #f0fdf4;
+}
+
+.course-cover-preview {
+
+  width: 100%;
+
+  max-width: 420px;
+
+  margin-top: 18px;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.1);
+}
+
+.lesson-editor {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ql-editor {
+  min-height: 220px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .admin-actions button {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .course-editor-page {
+    margin: 1rem auto;
+  }
+  
+  .course-actions {
+    flex-direction: column;
+  }
+  
+  .save-course-btn, 
+  .delete-course-btn {
+    width: 100%;
+  }
+}

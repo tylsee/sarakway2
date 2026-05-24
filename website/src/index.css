@@ -1,0 +1,39 @@
+:root {
+  /* sarakway brand colors[cite: 1] */
+  --sarakway-green: #002D04; 
+  --sarakway-green-light: #e3eec0;
+  --sarakway-bg: #fdfcf9;
+  --text-main: #ffffff;
+  --text-muted: #888888;
+  --sidebar-width: 280px;
+  --radius-lg: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'inter', sans-serif; /* or your preferred clean font */
+  background-color: var(--sarakway-bg);
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width); /* 280px */
+  padding: 40px;
+  width: 100%;
+}
+
+/* when sidebar is hidden (login/register) */
+.main-content.full {
+  margin-left: 0;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0;
+  }
+}

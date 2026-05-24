@@ -1,0 +1,382 @@
+.admin-guides-page {
+  padding: 40px;
+}
+
+.guides-header {
+  margin-bottom: 30px;
+}
+
+.guides-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.guides-header p {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.guides-search {
+  margin-bottom: 30px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.guides-search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.guides-search input {
+  width: 100%;
+  padding: 14px 18px 14px 48px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  font-size: 16px;
+  outline: none;
+}
+
+.guides-table {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.guides-table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1.4fr;
+  padding: 22px 30px;
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.guide-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1.4fr;
+  padding: 24px 30px;
+  border-top: 1px solid #f3f4f6;
+  align-items: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.guide-row:hover {
+  background: #f9fafb;
+}
+
+.guide-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.guide-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #166534;
+}
+
+.guide-details h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.guide-details p {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.guides-stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.completed-count {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.progress-count {
+  color: #ea580c;
+  font-weight: 600;
+}
+
+.badges-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.guide-details-page {
+  padding: 40px;
+}
+
+.guide-profile-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.guide-profile-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.guide-profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #166534;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.guide-profile-card h1 {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+.guide-profile-card p {
+  color: #6b7280;
+}
+
+.guide-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.guide-stat-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.guide-stat-card h2 {
+  font-size: 36px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.guide-stat-card p {
+  color: #6b7280;
+}
+
+.guide-progress-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.progress-header h2 {
+  font-size: 22px;
+}
+
+.progress-header span {
+  font-weight: 700;
+  color: #166534;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 16px;
+  background: #f3f4f6;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #16a34a;
+  border-radius: 999px;
+}
+
+.guide-courses-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px;
+  margin-top: 30px;
+}
+
+.guide-courses-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.guide-courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.guide-course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid #f3f4f6;
+  border-radius: 14px;
+  transition: 0.2s;
+}
+
+.guide-course-item:hover {
+  background: #f9fafb;
+}
+
+.guide-course-item h3 {
+  margin-bottom: 6px;
+}
+
+.guide-course-item p {
+  color: #6b7280;
+}
+
+.status-completed {
+  background: #dcfce7;
+  color: #166534;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.status-progress {
+  background: #ffedd5;
+  color: #c2410c;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.no-courses {
+  color: #6b7280;
+}
+
+.risk-badge {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.good-badge {
+  background: #dcfce7;
+  color: #166534;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.risk-reason {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.guides-stat-wrapper {
+  display: contents;
+}
+
+.risk-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+
+  .admin-guides-page {
+    padding: 20px;
+  }
+
+  .guides-header h1 {
+    font-size: 36px;
+  }
+
+  .guides-search {
+    max-width: 90%;
+  }
+
+  .guides-table-header {
+    display: none;
+  }
+
+  .guide-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 22px;
+  }
+
+  .guide-info {
+    width: 100%;
+  }
+
+  .guides-stat-wrapper {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 16px;
+  }
+
+  .guides-stat,
+  .badges-count {
+    font-size: 15px;
+  }
+
+  .risk-section {
+    width: 100%;
+  }
+
+  .guide-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-course-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .guide-profile-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
